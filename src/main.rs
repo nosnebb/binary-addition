@@ -1,8 +1,7 @@
-use clap::Parser;
-
-mod models;
+pub mod util;
+pub mod things;
 
 fn main() {
-    println!("hello, ben!");
-    models::args::Args::parse();
+    things::example::example();
+    util::cli::cli_command();
 }
